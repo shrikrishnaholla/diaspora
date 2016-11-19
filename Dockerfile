@@ -52,4 +52,5 @@ EXPOSE 		3000
 RUN 		/bin/bash -l -c "gem install bundler --no-ri --no-rdoc && bundle install --without test development --with postgresql"
 ONBUILD 	RUN  /bin/bash -l -c "rake assets:precompile" # if you want to build downstream, assume diaspora.yml already exists
 
-CMD			['/bin/bash', '-l, '-c', '"bundle exec unicorn -c config/unicorn.rb"']
+#CMD			['/bin/bash', '-l, '-c', '"bundle exec unicorn -c config/unicorn.rb"']
+CMD			/bin/bash -l -c "bundle exec unicorn -c config/unicorn.rb"
