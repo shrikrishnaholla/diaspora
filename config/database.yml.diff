@@ -1,5 +1,5 @@
 --- config/database.yml.example	2016-01-03 20:04:31.000000000 +0530
-+++ config/database.yml	2016-04-14 17:26:07.000000000 +0530
++++ config/database.yml	2016-04-14 17:26:07.000000000 +0530 
 @@ -1,20 +1,20 @@
  postgresql: &postgresql
    adapter: postgresql
